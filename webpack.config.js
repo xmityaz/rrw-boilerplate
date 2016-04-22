@@ -4,6 +4,7 @@
 
 const webpack = require('webpack');
 const path = require('path');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   context: path.join(__dirname, './src'),
@@ -28,8 +29,16 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loaders: ['react-hot', 'babel']
+      },
+      {
+        test: /\.css$/,
+        loaders: ['style-loader', 'css-loader', 'postcss-loader']
       }
     ]
+  },
+
+  postcss: function () {
+    return [autoprefixer];
   },
 
   resolve: {

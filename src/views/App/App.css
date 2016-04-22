@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app {
+  padding-top: 80px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 80px;
+
+  background-color: #9b26af;
+}
+
+.header__nav {
+  height: 100%;
+}
+
+.header-nav__tab {
+  float: left;
+
+  height: 100%;
+  padding: 0 20px;
+
+  line-height: 80px;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: .3s ease-in-out
+}
+
+.header-nav__tab:hover {
+  color: #68efad;
+
+  transform: scale(1.2, 1.2);
+}

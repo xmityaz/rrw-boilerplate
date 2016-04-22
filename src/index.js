@@ -9,7 +9,8 @@ import { Router, Route, browserHistory, Redirect } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 
 import configure from './store';
-import App from './views/App.jsx';
+import App from './views/App/App.jsx';
+import About from './views/About/About.jsx';
 
 const store = configure();
 const history = syncHistoryWithStore(browserHistory, store);
@@ -17,7 +18,10 @@ const history = syncHistoryWithStore(browserHistory, store);
 ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
-      <Route path="/" component={App} />
+      <Route component={App} path="/">
+        <Route path="list"/>
+        <Route component={About} path="about" />
+      </Route>
     </Router>
   </Provider>,
   document.getElementById('root')
