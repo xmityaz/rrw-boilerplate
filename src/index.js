@@ -10,6 +10,7 @@ import { syncHistoryWithStore } from 'react-router-redux';
 
 import configure from './store';
 import App from './views/App/App.jsx';
+import Home from './views/Home/Home.jsx';
 import About from './views/About/About.jsx';
 
 const store = configure();
@@ -19,7 +20,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
       <Route component={App} path="/">
-        <Route path="home"/>
+        <Route component={Home} path="home"/>
         <Route component={About} path="about" />
       </Route>
     </Router>

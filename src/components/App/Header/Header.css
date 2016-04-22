@@ -7,6 +7,7 @@
   height: 80px;
 
   background-color: #9b26af;
+  box-shadow: 0 1px 10px -2px;
 }
 
 .headerNav {

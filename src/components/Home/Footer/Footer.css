@@ -1,0 +1,48 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 2em;
+
+  background-color: #9b26af;
+  border-radius: 0 0 4px 4px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1em;
+}
+
+.filterItem {
+  height: 2em;
+  padding: 0 1em;
+
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 2em;
+
+  cursor: pointer;
+}
+
+.filterItem:hover {
+  border-bottom: .2em solid #68efad;
+}
+
+.clearCompleted {
+  height: 100%;
+  padding: 0 1em;
+
+  background-color: transparent;
+  border: none;
+
+  color: #ffffff;
+  font-size: 1em;
+
+  cursor: pointer;
+}
+
+.clearCompleted:hover {
+  color: #68efad;
+}

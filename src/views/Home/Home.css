@@ -1,0 +1,19 @@
+.home {
+  width: 50%;
+  margin: 5em auto;
+}
+
+.todoInput {
+  height: 3em;
+  width: 100%;
+  padding: 0 1em;
+  margin-bottom: 1.5em;
+
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+
+  color: #666666;
+  font-size: 1em;
+
+  outline: none;
+}
