@@ -3,14 +3,14 @@
  */
 
 import React, { Component } from 'react';
-import Header from '../../components/Header';
+import Header from '../../components/App/Header/Header';
 
-import './App.css';
+import styles from './App.css';
 
 export default class App extends Component {
   render() {
     return (
-      <div className="app">
+      <div className={styles.app}>
         <Header />
         {this.props.children}
       </div>

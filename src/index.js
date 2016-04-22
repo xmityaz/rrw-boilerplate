@@ -19,7 +19,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
       <Route component={App} path="/">
-        <Route path="list"/>
+        <Route path="home"/>
         <Route component={About} path="about" />
       </Route>
     </Router>
