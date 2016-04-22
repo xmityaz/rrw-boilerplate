@@ -16,6 +16,11 @@
   border-top: none;
 }
 
+.completed {
+  color: #999999;
+  text-decoration: line-through;
+}
+
 .close {
   position: absolute;
   right: 0.5em;

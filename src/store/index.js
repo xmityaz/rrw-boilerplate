@@ -6,7 +6,8 @@ import { createStore } from 'redux';
 import rootReducer from '../reducers'
 
 export default function configure(initialState) {
-  let store = createStore(rootReducer, initialState);
+  let store = createStore(rootReducer, initialState,
+    window.devToolsExtension ? window.devToolsExtension() : undefined);
 
   if (module.hot) {
     module.hot.accept('../reducers', () => {

@@ -6,14 +6,22 @@ import React, { PropTypes } from 'react';
 import styles from './TodoItem.css';
 
 const propTypes = {
-  children: PropTypes.string
+  children: PropTypes.string,
+  completed: PropTypes.bool,
+  onComplete: PropTypes.func,
+  onRemove: PropTypes.func
 };
 
-function TodoItem({ children }) {
+function TodoItem({ children, completed, onComplete, onRemove }) {
+  let className = styles.todoItem;
+
+  if (completed) {
+    className += ` ${styles.completed}`;
+  }
   return (
-    <div className={styles.todoItem}>
+    <div className={className} onClick={onComplete}>
       {children}
-      <button className={styles.close}>x</button>
+      <button onClick={onRemove} className={styles.close}>x</button>
     </div>
   )
 }

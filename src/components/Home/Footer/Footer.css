@@ -4,7 +4,7 @@
   width: 100%;
   height: 2em;
 
-  background-color: #9b26af;
+  background-color: #7a1ea1;
   border-radius: 0 0 4px 4px;
 }
 
@@ -26,6 +26,10 @@
   cursor: pointer;
 }
 
+.filterItem.selected {
+  color: #68efad;
+}
+
 .filterItem:hover {
   border-bottom: .2em solid #68efad;
 }
@@ -37,12 +41,12 @@
   background-color: transparent;
   border: none;
 
-  color: #ffffff;
+  color: #68efad;
   font-size: 1em;
 
   cursor: pointer;
 }
 
 .clearCompleted:hover {
-  color: #68efad;
+  text-decoration: underline;
 }
