@@ -12,9 +12,14 @@
     "url": "git+https://github.com/xmityaz/rrw-boilerplate.git"
   },
   "keywords": [
+    "Boilerplate",
     "React",
     "Redux",
     "Webpack"
+    "Babel",
+    "ES6",
+    "PostCSS"
+    "react-router"
   ],
   "author": "Dmytro Novosad (xmityaz)",
   "license": "MIT",
