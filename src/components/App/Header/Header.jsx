@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <div className={styles.header}>
       <div className={styles.headerNav}>
-        <Link className={styles.headerNavTab} to="home">Home</Link>
+        <Link className={styles.headerNavTab} to="/">Home</Link>
         <Link className={styles.headerNavTab} to="about">About</Link>
       </div>
     </div>
